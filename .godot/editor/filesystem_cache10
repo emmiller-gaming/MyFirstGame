@@ -1,7 +1,9 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1783894483
-main.tscn::PackedScene::3362992348622521962::1783893153::0::1::::<><><>0<>0<><>::
+::res://::1784611054
+main.tscn::PackedScene::3362992348622521962::1784611054::0::1::::<><><>0<>0<><>::uid://cdpk5t5y7qnm0::::res://Art/scenery/DoodledTulipPatch.png<>uid://csxetsu38gc7v::::res://Art/scenery/TreeRoughDetailed.png<>uid://b4j3l45xljj6j::::res://Art/characters/FemPlayerCharacter.png<>uid://krwedrigqcox::::res://PC.gd
 README.md::TextFile::-1::1783892895::0::1::::<><><>0<>0<><>::
+PC.gd::GDScript::738325959419680411::1784610973::0::1::::<>Sprite3D<><>0<>0<><>::
+playable_character.gd::GDScript::7405175805514747253::1784601548::0::1::::<>Node3D<><>0<>0<><>::
 ::res://addons/::1783894833
 ::res://addons/asset_placer/::1783894835
 asset_placer.gd::GDScript::4647140511640124282::1783894833::0::1::::AssetPlacer<>RefCounted<><>0<>0<><>::
@@ -53,7 +55,7 @@ about_window.tscn::PackedScene::8872119932348332822::1783894834::0::1::::<><><>0
 asset_collections_presenter.gd::GDScript::8373912517742799831::1783894834::0::1::::AssetCollectionsPresenter<>RefCounted<><>0<>0<><>::
 asset_collection_window.gd::GDScript::1849331532170282373::1783894834::0::1::::<>Control<><>0<>1<><>::
 asset_collection_window.tscn::PackedScene::5426703864740129737::1783894834::0::1::::<><><>0<>0<><>::uid://1l3hqqsryn3j::::res://addons/asset_placer/ui/asset_collections_window/asset_collection_window.gd<>uid://dmicn3kmr620j::::res://addons/asset_placer/utils/system_icon.gd
-::res://addons/asset_placer/ui/asset_collections_window/components/::1783894834
+::res://addons/asset_placer/ui/asset_collections_window/components/::1783894835
 collection_circle.svg::CompressedTexture2D::3735666302366531404::1783894834::1783894835::1::::<><><>0<>0<>433f7cd0f9f576437db93de26cf65ca7<>res://.godot/imported/collection_circle.svg-58f9a699e495398e354775c9c0f88a1d.ctex::
 collection_list_item.gd::GDScript::2799622404738247231::1783894834::0::1::::AssetCollectionListItem<>Control<><>0<>1<><>::
 collection_list_item.tscn::PackedScene::6106006888545506641::1783894834::0::1::::<><><>0<>0<><>::uid://dmicn3kmr620j::::res://addons/asset_placer/utils/system_icon.gd<>uid://bf5fmwafbhhb0::::res://addons/asset_placer/ui/asset_collections_window/components/collection_list_item.gd<>uid://btht44hiygnmq::::res://addons/asset_placer/ui/asset_collections_window/components/collection_circle.svg
@@ -106,7 +108,7 @@ checkable_asset_item.gd::GDScript::4613156481665795956::1783894834::0::1::::<>Bu
 checkable_asset_item.tscn::PackedScene::2827482306860860903::1783894834::0::1::::<><><>0<>0<><>::uid://b6ywapljcr4hk::::res://addons/asset_placer/ui/manage_collections/component/checkable_asset_item.gd<>uid://be61c5ff55gfo::::res://addons/asset_placer/icon.png
 checkable_collection_item.gd::GDScript::4427860496588222613::1783894834::0::1::::<>PanelContainer<><>0<>1<><>::
 checkable_collection_item.tscn::PackedScene::3642525947424776379::1783894834::0::1::::<><><>0<>0<><>::uid://b4c5hlcpl1sor::::res://addons/asset_placer/ui/manage_collections/component/checkable_collection_item.gd<>uid://dmicn3kmr620j::::res://addons/asset_placer/utils/system_icon.gd<>uid://be61c5ff55gfo::::res://addons/asset_placer/icon.png
-::res://addons/asset_placer/ui/plane_preview/::1783894834
+::res://addons/asset_placer/ui/plane_preview/::1783894835
 plane_placer.gd::GDScript::452437734424714579::1783894834::0::1::::PlanePlacer<>RefCounted<><>0<>0<><>::
 plane_preview_material.tres::StandardMaterial3D::7037755619224943476::1783894834::0::1::::<><><>0<>0<><>::uid://dago1cpuysosa::::res://addons/asset_placer/ui/plane_preview/plane_texture.svg
 plane_texture.svg::CompressedTexture2D::7172544915304190956::1783894834::1783894835::1::::<><><>0<>0<>ed772c728e37952db5a16267010f21d3<>res://.godot/imported/plane_texture.svg-32714c12aa275ec18acde20ae96a9021.s3tc.ctex::
@@ -154,3 +156,14 @@ blendkit-logo-hexa_pure.svg::CompressedTexture2D::2134160785373107273::178389448
 ::res://addons/blendkit/ui/::1783894483
 download_progress_bar.gd::GDScript::6180737870279882726::1783894483::0::1::::<>ProgressBar<><>0<>1<><>::
 download_progress_bar.tscn::PackedScene::2357321181611821741::1783894483::0::1::::<><><>0<>0<><>::uid://cub835i4i2uxq::::res://addons/blendkit/ui/download_progress_bar.gd
+::res://Art/::1784597648
+::res://Art/characters/::1784600547
+FemPlayerCharacter.png::CompressedTexture2D::4442197839094359331::1784597661::1784600547::1::::<><><>0<>0<>fc9a8adcdeb4c31fae069c3fb09edc39<>res://.godot/imported/FemPlayerCharacter.png-c11dbf53616b3392fe0eb61b4b24f8a5.s3tc.ctex::
+MascPlayerCharacter.png::CompressedTexture2D::1037167602739090928::1784597665::1784597688::1::::<><><>0<>0<>7d96a2040e01615aaebaccee2d6ee5bb<>res://.godot/imported/MascPlayerCharacter.png-86d0ade637293c8724fac23f5a7a82ae.ctex::
+WorriedYoungGirl.png::CompressedTexture2D::6596338778602037111::1784597683::1784597688::1::::<><><>0<>0<>23be0220f8bf99d1cdee20c182779cfd<>res://.godot/imported/WorriedYoungGirl.png-6495d5b00c75865ca3429f17e448db44.ctex::
+::res://Art/other/::1784597688
+DoodleRat.png::CompressedTexture2D::2508408729336579922::1784597652::1784597688::1::::<><><>0<>0<>cb085bf25287997bcf08f612aff64c96<>res://.godot/imported/DoodleRat.png-a26afc2bffc808db600601a5bd5b6686.ctex::
+::res://Art/scenery/::1784597717
+DoodledTulipPatch.png::CompressedTexture2D::5015035353777649893::1784597477::1784597510::1::::<><><>0<>0<>8abe12fb785bf104912db8ae72f0e41d<>res://.godot/imported/DoodledTulipPatch.png-5c74c3f405d515b3b1e327b3bd3b0682.s3tc.ctex::
+TreeLessDetailed.png::CompressedTexture2D::8887384002279286676::1784597671::1784611149::1::::<><><>0<>0<>8da3200e3c46ed1afc2e7bf9c8567edd<>res://.godot/imported/TreeLessDetailed.png-b3d4a4997879efc1958cd4453f17180c.s3tc.ctex::
+TreeRoughDetailed.png::CompressedTexture2D::6083999016902339869::1784597676::1784597717::1::::<><><>0<>0<>7d53d7fc2df5a1cdf710516061b22dfb<>res://.godot/imported/TreeRoughDetailed.png-85f8db6d1504ad2083b7f551a979a09a.s3tc.ctex::
