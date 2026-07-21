@@ -17,10 +17,6 @@ size = Vector3(2, 0.1, 2)
 [node name="Main" type="Node3D" unique_id=275464332]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0131327, 1.0566752, 0)
 
-[node name="Camera3D" type="Camera3D" parent="." unique_id=1460995468]
-transform = Transform3D(0.9714615, -0.076143265, 0.22464402, 0.045999814, 0.9895725, 0.1364926, -0.23269454, -0.1222637, 0.96483415, -1.3603803, 2.1446192, 6.2839003)
-fov = 72.01325
-
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1861242999]
 transform = Transform3D(0.7941388, -0.4509554, 0.40740967, 0.1073548, 0.7639234, 0.63631463, -0.5981792, -0.46158466, 0.65507346, -1.3057697, 4.6302185, 4.7429953)
 
@@ -66,3 +62,6 @@ texture = ExtResource("5_lquwl")
 transform = Transform3D(0.5284276, 0.034070082, 0, -0.034070082, 0.5284276, 0, 0, 0, 0.5295248, 5.8260803, 0.81761026, 15.757138)
 billboard = 2
 texture = ExtResource("5_lquwl")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=91210496]
+transform = Transform3D(-0.91808635, 0, 0.3963804, 0.1872294, 0.88141227, 0.43365604, -0.34937453, 0.47234777, -0.80921257, -1.0078378, 3.689058, -4.211332)
