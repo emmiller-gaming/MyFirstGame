@@ -1,5 +1,26 @@
 [gd_scene format=3 uid="uid://bn6b80q25bhta"]
 
-[node name="Node2D" type="Node2D" unique_id=795320509]
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_60swb"]
 
-[node name="Node2D" type="Node2D" parent="." unique_id=1470525628]
+[sub_resource type="Sky" id="Sky_oxpsm"]
+sky_material = SubResource("ProceduralSkyMaterial_60swb")
+
+[sub_resource type="Environment" id="Environment_tt62d"]
+background_mode = 2
+sky = SubResource("Sky_oxpsm")
+
+[node name="Node3D" type="Node3D" unique_id=275464332]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0131327, 1.0566752, 0)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1460995468]
+transform = Transform3D(0.2524418, 0, 0.9676121, 0, 1, 0, -0.9676121, 0, 0.2524418, 1.0995265, -0.014145613, 0.3975339)
+fov = 66.10185
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1617182984]
+environment = SubResource("Environment_tt62d")
+
+[node name="Node3D" type="Node3D" parent="WorldEnvironment" unique_id=1606168005]
+transform = Transform3D(0.99601895, 0.08914174, 0, -0.08914174, 0.99601895, 0, 0, 0, 1, -1.1094879, 0.8689097, -0.9940972)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1861242999]
+transform = Transform3D(0.96549356, -0.24596187, 0.085585326, 0.09601884, 0.6416861, 0.76093334, -0.24207951, -0.7264584, 0.6431608, -1.4115129, 2.4318287, 3.035303)

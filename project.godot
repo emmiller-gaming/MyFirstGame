@@ -10,6 +10,7 @@ config_version=5
 
 [application]
 
+config/name="MyFirstGame"
 config/features=PackedStringArray("4.7")
 
 [display]
