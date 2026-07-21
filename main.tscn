@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://b4j3l45xljj6j" path="res://Art/characters/FemPlayerCharacter.png" id="3_h2yge"]
 [ext_resource type="Script" uid="uid://krwedrigqcox" path="res://PC.gd" id="4_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://dyvd6e7uuatw3" path="res://Art/scenery/TreeLessDetailed.png" id="5_lquwl"]
+[ext_resource type="Texture2D" uid="uid://bb0dei3mkdbxi" path="res://Art/other/DoodleRat.png" id="6_7mycd"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_tt62d"]
 
@@ -65,3 +66,7 @@ texture = ExtResource("5_lquwl")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=91210496]
 transform = Transform3D(-0.91808635, 0, 0.3963804, 0.1872294, 0.88141227, 0.43365604, -0.34937453, 0.47234777, -0.80921257, -1.0078378, 3.689058, -4.211332)
+
+[node name="rat" type="Sprite3D" parent="." unique_id=378011212]
+transform = Transform3D(0.36023095, 0, 0, 0, 0.36023095, 0, 0, 0, 0.36023095, 3.8091102, 3.5235097, 0.6272812)
+texture = ExtResource("6_7mycd")
