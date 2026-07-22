@@ -1,1 +1,3 @@
 res://main.tscn
+res://PlayerCharacter/PlayerCharacter.tscn
+res://PlayerCharacter/PlayerCharacter.gd

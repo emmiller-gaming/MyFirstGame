@@ -1,7 +1,7 @@
-extends Sprite3D
+extends Node3D
+class_name PlayerCharacter
 
 var move_distance = 1.0
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

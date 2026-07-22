@@ -1,9 +1,6 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1784615233
-camera.gd::GDScript::5770459287800970455::1784613289::0::1::::<>Camera3D<><>0<>0<><>::
-main.tscn::PackedScene::3362992348622521962::1784614365::0::1::::<><><>0<>0<><>::uid://cdpk5t5y7qnm0::::res://Art/scenery/DoodledTulipPatch.png<>uid://csxetsu38gc7v::::res://Art/scenery/TreeRoughDetailed.png<>uid://b4j3l45xljj6j::::res://Art/characters/FemPlayerCharacter.png<>uid://krwedrigqcox::::res://PC.gd<>uid://dyvd6e7uuatw3::::res://Art/scenery/TreeLessDetailed.png
-PC.gd::GDScript::738325959419680411::1784610973::0::1::::<>Sprite3D<><>0<>0<><>::
-playable_character.gd::GDScript::7405175805514747253::1784601548::0::1::::<>Node3D<><>0<>0<><>::
+::res://::1784754488
+main.tscn::PackedScene::3362992348622521962::1784754237::0::1::::<><><>0<>0<><>::uid://cdpk5t5y7qnm0::::res://Art/scenery/DoodledTulipPatch.png<>uid://csxetsu38gc7v::::res://Art/scenery/TreeRoughDetailed.png<>uid://clnh7jk5reqad::::res://PlayerCharacter/PlayerCharacter.tscn<>uid://dyvd6e7uuatw3::::res://Art/scenery/TreeLessDetailed.png<>uid://bb0dei3mkdbxi::::res://Art/other/DoodleRat.png
 README.md::TextFile::-1::1783892895::0::1::::<><><>0<>0<><>::
 ::res://addons/::1783894833
 ::res://addons/asset_placer/::1783894835
@@ -162,9 +159,12 @@ download_progress_bar.tscn::PackedScene::2357321181611821741::1783894483::0::1::
 FemPlayerCharacter.png::CompressedTexture2D::4442197839094359331::1784597661::1784600547::1::::<><><>0<>0<>fc9a8adcdeb4c31fae069c3fb09edc39<>res://.godot/imported/FemPlayerCharacter.png-c11dbf53616b3392fe0eb61b4b24f8a5.s3tc.ctex::
 MascPlayerCharacter.png::CompressedTexture2D::1037167602739090928::1784597665::1784597688::1::::<><><>0<>0<>7d96a2040e01615aaebaccee2d6ee5bb<>res://.godot/imported/MascPlayerCharacter.png-86d0ade637293c8724fac23f5a7a82ae.ctex::
 WorriedYoungGirl.png::CompressedTexture2D::6596338778602037111::1784597683::1784597688::1::::<><><>0<>0<>23be0220f8bf99d1cdee20c182779cfd<>res://.godot/imported/WorriedYoungGirl.png-6495d5b00c75865ca3429f17e448db44.ctex::
-::res://Art/other/::1784597688
+::res://Art/other/::1784615397
 DoodleRat.png::CompressedTexture2D::2508408729336579922::1784597652::1784615397::1::::<><><>0<>0<>49795d380bac85b33c05117f55f97248<>res://.godot/imported/DoodleRat.png-a26afc2bffc808db600601a5bd5b6686.s3tc.ctex::
 ::res://Art/scenery/::1784611149
 DoodledTulipPatch.png::CompressedTexture2D::5015035353777649893::1784597477::1784597510::1::::<><><>0<>0<>8abe12fb785bf104912db8ae72f0e41d<>res://.godot/imported/DoodledTulipPatch.png-5c74c3f405d515b3b1e327b3bd3b0682.s3tc.ctex::
 TreeLessDetailed.png::CompressedTexture2D::8887384002279286676::1784597671::1784611149::1::::<><><>0<>0<>8da3200e3c46ed1afc2e7bf9c8567edd<>res://.godot/imported/TreeLessDetailed.png-b3d4a4997879efc1958cd4453f17180c.s3tc.ctex::
 TreeRoughDetailed.png::CompressedTexture2D::6083999016902339869::1784597676::1784597717::1::::<><><>0<>0<>7d53d7fc2df5a1cdf710516061b22dfb<>res://.godot/imported/TreeRoughDetailed.png-85f8db6d1504ad2083b7f551a979a09a.s3tc.ctex::
+::res://PlayerCharacter/::1784754464
+PlayerCharacter.tscn::PackedScene::5572238212105808947::1784754513::0::1::::<><><>0<>0<><>::uid://krwedrigqcox::::res://PlayerCharacter.gd<>uid://b4j3l45xljj6j::::res://Art/characters/FemPlayerCharacter.png
+PlayerCharacter.gd::GDScript::738325959419680411::1784610973::0::1::::<>Sprite3D<><>0<>0<><>::
