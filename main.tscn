@@ -36,26 +36,29 @@ size = Vector3(2, 0.1, 2)
 environment = SubResource("Environment_5vw27")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=977019928]
-transform = Transform3D(0.66913074, 0.6435823, -0.37157235, 0, 0.49999997, 0.86602545, 0.74314475, -0.5794842, 0.33456534, 0, 0, 0)
+transform = Transform3D(0.8770659, -0.41601273, 0.240185, 2.2147441e-08, 0.4999999, 0.8660254, -0.4803701, -0.7595614, 0.4385329, 0, 2.6326418, 0)
 shadow_enabled = true
 
 [node name="Tulip patch" type="Sprite3D" parent="." unique_id=1517357016]
-transform = Transform3D(0.021821773, 0, 0.13578433, 0, 0.13752663, 0, -0.13578433, 0, 0.021821773, -2.736721, -0.40376234, -0.89939106)
+transform = Transform3D(0.021821773, 0, 0.13578433, 0, 0.13752663, 0, -0.13578433, 0, 0.021821773, -2.2288837, -0.68821716, 0.8628322)
 billboard = 2
+alpha_cut = 2
 texture = ExtResource("1_ig7tw")
 
 [node name="BigTree" type="Sprite3D" parent="." unique_id=1474639284]
 transform = Transform3D(0.016800256, 0, 0.595586, 0, 0.59582293, 0, -0.595586, 0, 0.016800256, -6.525105, 1.2472854, -0.32543945)
 billboard = 2
+alpha_cut = 2
 texture = ExtResource("2_0xm2m")
 
 [node name="BigTree2" type="Sprite3D" parent="." unique_id=474828494]
 transform = Transform3D(0.01675308, 0, 0.53629434, 0, 0.59582293, 0, -0.5939135, 0, 0.01512776, 9.183195, 1.2472854, -5.831468)
 billboard = 2
+alpha_cut = 2
 texture = ExtResource("2_0xm2m")
 
 [node name="Ground" type="MeshInstance3D" parent="." unique_id=778546859]
-transform = Transform3D(23.517944, 0, 0, 0, 23.517944, 0, 0, 0, 23.517944, -1.010667, -1.0669583, 0.0044620037)
+transform = Transform3D(23.517944, 0, 0, 0, 23.517944, 0, 0, 0, 23.517944, -0.99462163, -1.0669583, -0.001363039)
 mesh = SubResource("PlaneMesh_tt62d")
 surface_material_override/0 = SubResource("StandardMaterial3D_lquwl")
 
@@ -70,6 +73,7 @@ texture = ExtResource("5_lquwl")
 [node name="Tree2" type="Sprite3D" parent="." unique_id=609738069]
 transform = Transform3D(0.5284276, 0.034070082, 0, -0.034070082, 0.5284276, 0, 0, 0, 0.5295248, 0, 0.81761026, -10.41427)
 billboard = 2
+alpha_cut = 2
 texture = ExtResource("5_lquwl")
 
 [node name="Tree3" type="Sprite3D" parent="." unique_id=1761728994]
@@ -78,10 +82,13 @@ billboard = 2
 texture = ExtResource("5_lquwl")
 
 [node name="rat" type="Sprite3D" parent="." unique_id=378011212]
-transform = Transform3D(0.36023095, 0, 0, 0, 0.36023095, 0, 0, 0, 0.36023095, 3.8091102, 3.5235097, 0.6272812)
+transform = Transform3D(0.35863748, 0.033845346, 0, -0.033845346, 0.35863748, 0, 0, 0, 0.36023095, 3.8091102, 0.5625315, 0.6272812)
+alpha_cut = 2
 texture = ExtResource("6_7mycd")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1505843262]
+[node name="test cube" type="MeshInstance3D" parent="." unique_id=1505843262]
+visible = false
 mesh = SubResource("BoxMesh_tt62d")
 
 [node name="PlayerCharacter" parent="." unique_id=330603931 instance=ExtResource("5_7mycd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.1039295, 0)
