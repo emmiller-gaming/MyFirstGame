@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://bn6b80q25bhta"]
+
+[ext_resource type="Texture2D" uid="uid://cdpk5t5y7qnm0" path="res://Art/scenery/TulipPatch.png" id="1_21xkr"]
+[ext_resource type="PackedScene" uid="uid://buhrqe12o5odf" path="res://Scenes/Rat.tscn" id="2_6bp64"]
+[ext_resource type="PackedScene" uid="uid://clnh7jk5reqad" path="res://PlayerCharacter/PlayerCharacter.tscn" id="3_344ge"]
+[ext_resource type="PackedScene" uid="uid://gwomfhtoqpsc" path="res://Scenes/BigTree.tscn" id="4_ynf5e"]
+[ext_resource type="PackedScene" uid="uid://c3e3byncmae6e" path="res://SmallTree/SmallTree.tscn" id="5_hptm8"]
+[ext_resource type="PackedScene" uid="uid://bqt1rqtj5bl2g" path="res://Scenes/TulipPatch.tscn" id="6_d1ilt"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7mycd"]
+sky_top_color = Color(0.9287662, 0.68076825, 0.50309473, 1)
+sky_horizon_color = Color(0.99135566, 0.9611414, 0.9218977, 1)
+ground_bottom_color = Color(0.06831994, 0.19546115, 0.21615973, 1)
+ground_horizon_color = Color(0.99135566, 0.9611414, 0.9218977, 1)
+energy_multiplier = 1.05
+
+[sub_resource type="Sky" id="Sky_272bh"]
+sky_material = SubResource("ProceduralSkyMaterial_7mycd")
+
+[sub_resource type="Environment" id="Environment_5vw27"]
+background_mode = 2
+sky = SubResource("Sky_272bh")
+
+[sub_resource type="BoxMesh" id="BoxMesh_tt62d"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tt62d"]
+size = Vector3(50, 1, 50)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_tt62d"]
+size = Vector2(30, 30)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lquwl"]
+albedo_color = Color(0.44705883, 0.57254905, 0.3019608, 1)
+
+[node name="Main" type="Node" unique_id=1626343975]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1244063652]
+environment = SubResource("Environment_5vw27")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=977019928]
+transform = Transform3D(0.8770659, -0.41601273, 0.240185, 2.2147441e-08, 0.4999999, 0.8660254, -0.4803701, -0.7595614, 0.4385329, 0, 2.6326418, 0)
+shadow_enabled = true
+
+[node name="Tulip patch" type="Sprite3D" parent="." unique_id=1517357016]
+transform = Transform3D(0.021821773, 0, 0.13578433, 0, 0.13752663, 0, -0.13578433, 0, 0.021821773, -2.2288837, 0.534776, 0.8628322)
+billboard = 2
+alpha_cut = 2
+texture = ExtResource("1_21xkr")
+
+[node name="rat" parent="." unique_id=73373990 instance=ExtResource("2_6bp64")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8227649, 0, 0)
+
+[node name="test cube" type="MeshInstance3D" parent="." unique_id=1505843262]
+visible = false
+mesh = SubResource("BoxMesh_tt62d")
+
+[node name="PlayerCharacter" parent="." unique_id=330603931 instance=ExtResource("3_344ge")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6819582, 0)
+
+[node name="Tree4" parent="." unique_id=840874492 instance=ExtResource("4_ynf5e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.199855, 0, 0)
+
+[node name="SmallTree" parent="." unique_id=499137603 instance=ExtResource("5_hptm8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.474295, 0, 0)
+
+[node name="SmallTree2" parent="." unique_id=681843311 instance=ExtResource("5_hptm8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.119458, 0, 7.7687855)
+
+[node name="SmallTree3" parent="." unique_id=1172776829 instance=ExtResource("5_hptm8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.367077, 0, 8.22409)
+
+[node name="Node3D" parent="." unique_id=1335783034 instance=ExtResource("6_d1ilt")]
+
+[node name="Ground" type="StaticBody3D" parent="." unique_id=1808586471]
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground" unique_id=954328963]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("BoxShape3D_tt62d")
+
+[node name="Graphics" type="MeshInstance3D" parent="Ground" unique_id=778546859]
+mesh = SubResource("PlaneMesh_tt62d")
+surface_material_override/0 = SubResource("StandardMaterial3D_lquwl")

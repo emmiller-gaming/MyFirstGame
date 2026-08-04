@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://c3e3byncmae6e"]
+
+[ext_resource type="Texture2D" uid="uid://dyvd6e7uuatw3" path="res://Art/scenery/SmallTree.png" id="1_yjdgi"]
+
+[node name="SmallTree" type="Node3D" unique_id=499137603]
+
+[node name="Graphics" type="Sprite3D" parent="." unique_id=846085035]
+transform = Transform3D(0.375, 0, 0, 0, 0.375, 0, 0, 0, 0.375, -0.080459595, 1.233741, 0)
+billboard = 2
+alpha_cut = 2
+texture = ExtResource("1_yjdgi")

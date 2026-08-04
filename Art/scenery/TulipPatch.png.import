@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://csxetsu38gc7v"
-path.s3tc="res://.godot/imported/TreeRoughDetailed.png-85f8db6d1504ad2083b7f551a979a09a.s3tc.ctex"
+uid="uid://cdpk5t5y7qnm0"
+path.s3tc="res://.godot/imported/TulipPatch.png-1d8dc821453852fa22f98c1be719e331.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Art/scenery/TreeRoughDetailed.png"
-dest_files=["res://.godot/imported/TreeRoughDetailed.png-85f8db6d1504ad2083b7f551a979a09a.s3tc.ctex"]
+source_file="res://Art/scenery/TulipPatch.png"
+dest_files=["res://.godot/imported/TulipPatch.png-1d8dc821453852fa22f98c1be719e331.s3tc.ctex"]
 
 [params]
 

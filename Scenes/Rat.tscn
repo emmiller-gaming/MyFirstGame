@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://buhrqe12o5odf"]
+
+[ext_resource type="Texture2D" uid="uid://bb0dei3mkdbxi" path="res://Art/other/DoodleRat.png" id="1_3qrag"]
+[ext_resource type="Script" uid="uid://fp6t8ld33ekw" path="res://Scenes/Rat.gd" id="2_j45nl"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tt62d"]
+size = Vector3(0.720459, 0.8602905, 0.72558594)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_oxpsm"]
+height = 1.0842285
+radius = 0.205
+
+[node name="Rat" type="Area3D" unique_id=1947845750]
+script = ExtResource("2_j45nl")
+
+[node name="Graphics" type="Sprite3D" parent="." unique_id=73373990]
+transform = Transform3D(0.12942494, 0.012214094, 0, -0.012214094, 0.12942494, 0, 0, 0, 0.13, 0.16901016, 0.591537, 0)
+billboard = 2
+alpha_cut = 2
+texture = ExtResource("1_3qrag")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1548277279]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.022827148, 0.6642528, 0.13720703)
+shape = SubResource("BoxShape3D_tt62d")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1344946034]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=129603727]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6564534, 0)
+shape = SubResource("CylinderShape3D_oxpsm")
+
+[node name="SpeechBubble" type="PanelContainer" parent="." unique_id=1168196190]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBox" type="VBoxContainer" parent="SpeechBubble" unique_id=955625936]
+layout_mode = 2
+
+[node name="Message" type="Label" parent="SpeechBubble/VBox" unique_id=188908801]
+layout_mode = 2
+text = "Here's a quest"
+
+[node name="AcceptButton" type="Button" parent="SpeechBubble/VBox" unique_id=418002194]
+layout_mode = 2
+text = "Okay"

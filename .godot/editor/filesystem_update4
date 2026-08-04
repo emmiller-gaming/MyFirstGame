@@ -1,2 +1,12 @@
-res://PlayerCharacter/PlayerCharacter.tscn
+res://Tree/Tree.tscn
 res://main.tscn
+res://SmallTree/SmallTree.tscn
+res://Rat.tscn
+res://PlayerCharacter/PlayerCharacter.tscn
+res://BigTree/BigTree.tscn
+res://Scenes/main.tscn
+res://Scenes/Rat.tscn
+res://Scenes/BigTree.tscn
+res://Scenes/Rat.gd
+res://PlayerCharacter/PlayerCharacter.gd
+res://PlayerCharacter/PlayerCharacterxxx.gd

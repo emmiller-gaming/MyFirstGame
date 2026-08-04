@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://gwomfhtoqpsc"]
+
+[ext_resource type="Texture2D" uid="uid://csxetsu38gc7v" path="res://Art/scenery/BigTree.png" id="1_adxuq"]
+
+[node name="BigTree" type="Node3D" unique_id=840874492]
+
+[node name="Graphics" type="Sprite3D" parent="." unique_id=105237723]
+transform = Transform3D(0.016800256, 0, 0.595586, 0, 0.59582293, 0, -0.595586, 0, 0.016800256, 0.23895025, 2.5358806, -0.32543945)
+billboard = 2
+alpha_cut = 2
+texture = ExtResource("1_adxuq")

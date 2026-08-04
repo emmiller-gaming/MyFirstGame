@@ -1,10 +1,11 @@
 [gd_scene format=3 uid="uid://clnh7jk5reqad"]
 
-[ext_resource type="Script" uid="uid://krwedrigqcox" path="res://PlayerCharacter/PlayerCharacter.gd" id="1_52dax"]
+[ext_resource type="Script" uid="uid://dwmq0tj7klouk" path="res://PlayerCharacter/PlayerCharacter.gd" id="1_52dax"]
 [ext_resource type="Texture2D" uid="uid://b4j3l45xljj6j" path="res://Art/characters/FemPlayerCharacter.png" id="1_v4vvu"]
 
-[node name="PlayerCharacter" type="Node3D" unique_id=330603931]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.016901076, 0)
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_oxpsm"]
+
+[node name="PlayerCharacter" type="CharacterBody3D" unique_id=1081275749]
 script = ExtResource("1_52dax")
 
 [node name="CameraRig" type="Node3D" parent="." unique_id=259161471]
@@ -15,6 +16,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.0262303)
 current = true
 
 [node name="Graphics" type="Sprite3D" parent="." unique_id=535290970]
-transform = Transform3D(0.20117223, 0, 0, 0, 0.20117219, 0, 0, 0, 0.20117223, 0.101406574, 1.0647666, 0)
+transform = Transform3D(0.20117223, 0, 0, 0, 0.20117219, 0, 0, 0, 0.20117223, 0.101406574, 1.038873, 0)
 alpha_cut = 2
 texture = ExtResource("1_v4vvu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1312728938]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.034805298, 1.0517341, -0.08190918)
+shape = SubResource("CapsuleShape3D_oxpsm")
