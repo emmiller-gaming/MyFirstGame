@@ -19,4 +19,10 @@ func _process(delta: float) -> void:
 	pass
 
 func OnBodyEntered(other_body):
-	speech_bubble.show()
+	
+		speech_bubble.show()
+
+# trying to hide the speech bubble when leaving the rat from a distance
+func OnBodyLeft(other_body):
+		speech_bubble.hide()
+		

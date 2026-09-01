@@ -9,6 +9,8 @@ func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
+		
+
 
 	# Handle jump.
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
@@ -24,4 +26,13 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
+
+	# Camera Movement
+	# BUG messes with movement
+	if Input.is_action_just_pressed("rotate_map_left"):
+		$CameraRig.rotate_y(deg_to_rad(90))
+		
+	if Input.is_action_just_pressed("rotate_map_right"):
+		$CameraRig.rotate_y(deg_to_rad(-90))
+	
 	move_and_slide()

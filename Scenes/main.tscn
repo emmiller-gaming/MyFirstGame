@@ -21,8 +21,6 @@ sky_material = SubResource("ProceduralSkyMaterial_7mycd")
 background_mode = 2
 sky = SubResource("Sky_272bh")
 
-[sub_resource type="BoxMesh" id="BoxMesh_tt62d"]
-
 [sub_resource type="BoxShape3D" id="BoxShape3D_tt62d"]
 size = Vector3(50, 1, 50)
 
@@ -49,10 +47,6 @@ texture = ExtResource("1_21xkr")
 
 [node name="rat" parent="." unique_id=73373990 instance=ExtResource("2_6bp64")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8227649, 0, 0)
-
-[node name="test cube" type="MeshInstance3D" parent="." unique_id=1505843262]
-visible = false
-mesh = SubResource("BoxMesh_tt62d")
 
 [node name="PlayerCharacter" parent="." unique_id=330603931 instance=ExtResource("3_344ge")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6819582, 0)

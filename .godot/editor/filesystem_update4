@@ -1,0 +1,4 @@
+res://Scenes/Rat.gd
+res://PlayerCharacter/PlayerCharacter.tscn
+res://Scenes/main.tscn
+res://PlayerCharacter/PlayerCharacter.gd
