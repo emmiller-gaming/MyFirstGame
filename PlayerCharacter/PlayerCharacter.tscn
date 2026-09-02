@@ -3,20 +3,6 @@
 [ext_resource type="Script" uid="uid://dwmq0tj7klouk" path="res://PlayerCharacter/PlayerCharacter.gd" id="1_52dax"]
 [ext_resource type="Texture2D" uid="uid://b4j3l45xljj6j" path="res://Art/characters/FemPlayerCharacter.png" id="1_v4vvu"]
 
-[sub_resource type="GDScript" id="GDScript_v4vvu"]
-script/source = "extends Node3D
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-"
-
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_oxpsm"]
 
 [node name="PlayerCharacter" type="CharacterBody3D" unique_id=1081275749]
@@ -24,7 +10,6 @@ script = ExtResource("1_52dax")
 
 [node name="CameraRig" type="Node3D" parent="." unique_id=259161471]
 transform = Transform3D(1, 0, 0, 0, 0.87347287, 0.48687276, 0, -0.48687276, 0.87347287, 0, 0.85350347, 0)
-script = SubResource("GDScript_v4vvu")
 
 [node name="Camera3D" type="Camera3D" parent="CameraRig" unique_id=1436230602]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.0262303)

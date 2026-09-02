@@ -1,5 +1,5 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1788212811
+::res://::1788383538
 README.md::TextFile::-1::1783892895::0::1::::<><><>0<>0<><>::
 ::res://addons/::1783894833
 ::res://addons/asset_placer/::1783894835
@@ -165,13 +165,13 @@ DoodleRat.png::CompressedTexture2D::2508408729336579922::1784597652::1784615397:
 BigTree.png::CompressedTexture2D::6083999016902339869::1784597676::1785792702::1::::<><><>0<>0<>3eae91300f9beb6849fb7fe222444435<>res://.godot/imported/BigTree.png-6164179bed5bac510b80b73fc2cdf90f.s3tc.ctex::
 SmallTree.png::CompressedTexture2D::8887384002279286676::1784597671::1785792707::1::::<><><>0<>0<>93470184e40788f84364891ee24b6834<>res://.godot/imported/SmallTree.png-577a3d0f87a50f892dab6375fcde377a.s3tc.ctex::
 TulipPatch.png::CompressedTexture2D::5015035353777649893::1784597477::1785792713::1::::<><><>0<>0<>853ed63b3fe8b6a36f14ca73f475d6a2<>res://.godot/imported/TulipPatch.png-1d8dc821453852fa22f98c1be719e331.s3tc.ctex::
-::res://PlayerCharacter/::1785803686
-PlayerCharacter.gd::GDScript::8729206274211257378::1785803686::0::1::::PlayerCharacter<>CharacterBody3D<><>0<>0<><>::
-PlayerCharacter.tscn::PackedScene::5572238212105808947::1785801643::0::1::::<><><>0<>0<><>::uid://dwmq0tj7klouk::::res://PlayerCharacter/PlayerCharacter.gd<>uid://b4j3l45xljj6j::::res://Art/characters/FemPlayerCharacter.png
-::res://Scenes/::1785804568
+::res://PlayerCharacter/::1788221570
+PlayerCharacter.gd::GDScript::8729206274211257378::1788214307::0::1::::PlayerCharacter<>CharacterBody3D<><>0<>0<><>::
+PlayerCharacter.tscn::PackedScene::5572238212105808947::1788221570::0::1::::<><><>0<>0<><>::uid://dwmq0tj7klouk::::res://PlayerCharacter/PlayerCharacter.gd<>uid://b4j3l45xljj6j::::res://Art/characters/FemPlayerCharacter.png
+::res://Scenes/::1788214067
 BigTree.tscn::PackedScene::467421114156108834::1785793473::0::1::::<><><>0<>0<><>::uid://csxetsu38gc7v::::res://Art/scenery/BigTree.png
-main.tscn::PackedScene::3362992348622521962::1785802265::0::1::::<><><>0<>0<><>::uid://cdpk5t5y7qnm0::::res://Art/scenery/TulipPatch.png<>uid://buhrqe12o5odf::::res://Scenes/Rat.tscn<>uid://clnh7jk5reqad::::res://PlayerCharacter/PlayerCharacter.tscn<>uid://gwomfhtoqpsc::::res://Scenes/BigTree.tscn<>uid://c3e3byncmae6e::::res://SmallTree/SmallTree.tscn<>uid://bqt1rqtj5bl2g::::res://Scenes/TulipPatch.tscn
-Rat.gd::GDScript::383827791799244474::1785804330::0::1::::Rat<>Area3D<><>0<>0<><>::
+main.tscn::PackedScene::3362992348622521962::1788214067::0::1::::<><><>0<>0<><>::uid://cdpk5t5y7qnm0::::res://Art/scenery/TulipPatch.png<>uid://buhrqe12o5odf::::res://Scenes/Rat.tscn<>uid://clnh7jk5reqad::::res://PlayerCharacter/PlayerCharacter.tscn<>uid://gwomfhtoqpsc::::res://Scenes/BigTree.tscn<>uid://c3e3byncmae6e::::res://SmallTree/SmallTree.tscn<>uid://bqt1rqtj5bl2g::::res://Scenes/TulipPatch.tscn
+Rat.gd::GDScript::383827791799244474::1788213225::0::1::::Rat<>Area3D<><>0<>0<><>::
 Rat.tscn::PackedScene::3805709213816651347::1785804568::0::1::::<><><>0<>0<><>::uid://bb0dei3mkdbxi::::res://Art/other/DoodleRat.png<>uid://fp6t8ld33ekw::::res://Scenes/Rat.gd
 TulipPatch.tscn::PackedScene::3550275229711014288::1785792759::0::1::::<><><>0<>0<><>::
 ::res://SmallTree/::1785793481

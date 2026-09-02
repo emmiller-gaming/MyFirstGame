@@ -11,14 +11,18 @@ func _physics_process(delta: float) -> void:
 		velocity += get_gravity() * delta
 		
 
-
 	# Handle jump.
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
 	# Get the input direction and handle the movement/deceleration.
 	var input_dir := Input.get_vector("move_left", "move_right", "move_up", "move_down")
+	
+	# take into account user input keys and camera position
+	# BUG $CamerRig "cannot infer the type of "direction" variable cuz value doesn't have a set type"
+				  #  $CameraRig.transform.basis  // this line will fix the movement
 	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+	
 	if direction:
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
@@ -28,11 +32,13 @@ func _physics_process(delta: float) -> void:
 
 
 	# Camera Movement
-	# BUG messes with movement
+	# BUG messes with movement, is $CamerRig the right connector??
 	if Input.is_action_just_pressed("rotate_map_left"):
 		$CameraRig.rotate_y(deg_to_rad(90))
 		
 	if Input.is_action_just_pressed("rotate_map_right"):
 		$CameraRig.rotate_y(deg_to_rad(-90))
+	# CODE scroll wheel zoom in/out
+	
 	
 	move_and_slide()
